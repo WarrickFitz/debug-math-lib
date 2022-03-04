@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "alwaysStrict": true,
+    "declaration": true,
+    "downlevelIteration": true,
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "module": "es6",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "outDir": "dist",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "sourceRoot": "../debug-jest-lib/",
+    "target": "es5",
+    "baseUrl": "./",
+    "paths": {
+      "*" : ["src/@customTypes/*"]
+    },
+    "resolveJsonModule": true,
+    "composite": true
+  },
+  "exclude": [
+    "dist",
+    "node_modules",
+    "./src/**/?(*.)test.ts",
+    "**/*.test.ts"
+    // "./src/tests/*.*",
+    // "./src/crypto/tests/*.*",
+  ],
+  "include": [
+    "./src/**/*.js",
+    "./src/**/*.ts"
+  ]
+}
